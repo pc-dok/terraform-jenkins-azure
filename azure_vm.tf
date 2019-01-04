@@ -46,7 +46,7 @@ resource "azurerm_virtual_machine_extension" "jenkins_terraform" {
 
   settings = <<SETTINGS
   {
-          "fileUris": ["https://rg2storageuaclrs.file.core.windows.net/scripts/jenkins-init.sh?sv=2018-03-28&ss=bqtf&srt=sco&sp=rwdlacup&se=2019-01-04T20:08:52Z&sig=FtuNDgG6MQXX4EuIaCUhEVbK5kqkpcDY3qaVLeZoYig%3D&_=1546603782420"],
+          "fileUris": ["https://github.com/pc-dok/terraform-jenkins-azure/blob/master/jenkins-init.sh"],
           "commandToExecute": "sh jenkins-init.sh"
       }
 SETTINGS
